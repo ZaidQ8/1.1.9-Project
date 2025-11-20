@@ -1,0 +1,197 @@
+import turtle as t
+import time
+
+
+# https://docs.python.org/3/library/turtle.html#turtle.setheading
+
+#change screen size
+screen = t.Screen()
+screen.setup(600, 400)
+
+t.speed(0)
+"""
+t.penup()
+t.forward(-100)
+t.right(90)
+
+t.pendown()
+t.fillcolor(216, 178, 106)
+t.begin_fill()
+t.circle(75, -180)
+t.end_fill()
+
+
+t.left(180)
+t.pendown()
+t.fillcolor(216, 178, 106)
+t.begin_fill()
+t.circle(25, -180)
+t.end_fill()
+t.penup()
+
+
+# go between rocks to make seawead
+t.setheading(180)
+t.forward(60)
+
+#code for squiggily line
+length = 0
+circle_size = 10
+circle_angle = -180
+
+  
+
+
+
+# code for squiggily line (left half-oval)
+
+oval_w = 18  # horizontal radius
+oval_h = 60    # vertical radius
+
+t.pendown()
+t.begin_fill()
+t.fillcolor(44, 176, 92)
+t.setheading(90)
+t.forward(40)
+
+for i in range(2):
+    
+    
+    t.setheading(0)
+    t.circle(oval_w, -60) 
+    t.circle(oval_h, -60)   
+    t.circle(oval_w, -60)   
+    t.setheading(-270)
+    
+
+
+t.setheading(0)
+t.forward(20)
+
+for i in range(2):
+    t.setheading(180)
+    t.circle(oval_w, -60) 
+    t.circle(oval_h, -60)   
+    t.circle(oval_w, -60)   
+    t.setheading(-270)
+
+t.setheading(270)
+t.forward(40)
+t.end_fill()
+t.penup()
+"""
+
+
+"""
+jellyfish1_color = 94, 44, 163
+
+t.speed(0)
+t.pensize(5)
+
+t.pendown()
+t.setheading(180)
+t.forward(100)
+t.setheading(270)
+t.begin_fill()
+t.fillcolor(jellyfish1_color)
+t.circle(50, -180)
+t.end_fill()
+t.penup()
+
+t.setheading(180)
+t.forward(92)
+t.pendown()
+
+
+
+t.pensize(7)
+t.pencolor(jellyfish1_color)
+tenticle_lenght = 2
+tenticle_number = 2
+
+for i in range(tenticle_number):
+  for i in range(tenticle_lenght):
+    t.setheading(180)
+    t.circle(15, 180)
+    t.setheading(-180)
+    t.circle(15, -180)
+  
+  t.penup()
+  t.forward(30)
+  t.pendown()
+  
+  
+  for i in range(tenticle_lenght):
+    t.setheading(0)
+    t.circle(15, 180)
+    t.setheading(360)
+    t.circle(15, -180)
+  
+  t.penup()
+  t.setheading(0)
+  t.forward(30)
+  t.pendown()
+
+t.penup()
+"""
+
+"""
+jellyfish2_color = 240, 183, 91
+
+t.speed(0)
+t.pensize(5)
+
+t.pendown()
+t.setheading(180)
+t.forward(100)
+t.setheading(270)
+t.begin_fill()
+t.fillcolor(jellyfish2_color)
+t.circle(50, -180)
+t.end_fill()
+t.penup()
+
+t.setheading(180)
+t.forward(92)
+t.pendown()
+
+
+
+t.pensize(7)
+t.pencolor(jellyfish2_color)
+tenticle_lenght = 2
+tenticle_number = 2
+
+for i in range(tenticle_number):
+  for i in range(tenticle_lenght):
+    t.setheading(180)
+    t.circle(15, 180)
+    t.setheading(-180)
+    t.circle(15, -180)
+  
+  t.penup()
+  t.forward(30)
+  t.pendown()
+  
+  
+  for i in range(tenticle_lenght):
+    t.setheading(0)
+    t.circle(15, 180)
+    t.setheading(360)
+    t.circle(15, -180)
+  
+  t.penup()
+  t.setheading(0)
+  t.forward(30)
+  t.pendown()
+
+t.penup()
+"""
+
+
+
+
+
+
+
+
