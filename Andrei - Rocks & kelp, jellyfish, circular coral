@@ -1,5 +1,5 @@
 import turtle as t
-import time
+
 
 
 # https://docs.python.org/3/library/turtle.html#turtle.setheading
@@ -189,9 +189,32 @@ t.penup()
 """
 
 
+"""  
+t.penup()
+t.pensize(5)
+t.pencolor(79, 255, 161)
+t.setheading(90)
 
 
 
+n_of_lines = 30
+heading = 180
+lenght = 75
 
 
 
+t.pendown()
+for i in range(n_of_lines):
+  t.setheading(heading)
+  t.forward(lenght)
+  t.backward(lenght)
+  heading = heading -7
+  
+  if heading <= 0:
+    heading = 180
+  
+t.setheading(0)
+t.forward(lenght)
+t.backward(lenght)
+t.penup()
+"""
