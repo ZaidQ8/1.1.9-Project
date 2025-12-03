@@ -168,7 +168,7 @@ def coral3():
   t.end_fill()
 
 t.penup()
-t.goto(150,-160)
+t.goto(160,-160)
 t.setheading(-10)
 t.left(100)
 for i in range(5):
@@ -178,7 +178,7 @@ for i in range(5):
   t.right(80)
   t.forward(20)
 t.penup()
-t.goto(160,-150)
+t.goto(170,-150)
 t.left(90)
 for i in range(4):
   t.pendown()
@@ -188,7 +188,7 @@ for i in range(4):
   t.forward(12)
 
 t.penup()
-t.goto(160,-150)
+t.goto(170,-150)
 t.right(90)
 for i in range(6):
   t.pendown()
@@ -289,3 +289,4 @@ draw_coral()
 
 
 screen.mainloop()
+
