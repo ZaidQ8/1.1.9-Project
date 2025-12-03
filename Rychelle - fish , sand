@@ -16,55 +16,6 @@ t.end_fill()
 
 #Fish 1
 def fish_one():
-  t.right(30)
-  t.penup()
-  t.goto(-160,50)
-  t.pendown()
-  t.fillcolor('red')
-  t.pencolor('red')
-  t.begin_fill()
-  t.circle(30, 360, 3)
-  t.end_fill()
-  
-  t.penup()
-  t.goto(-110,50)
-  t.pendown()
-  t.pencolor('pink')
-  t.fillcolor('pink')
-  t.pensize(2)
-  t.begin_fill()
-  t.circle(50,360,3)
-  t.end_fill()
-       
-  t.penup()
-  t.goto(-110,50)
-  t.pendown()
-  t.fillcolor('red')
-  t.pencolor('red')
-  t.begin_fill()
-  t.circle(30, 360, 3)
-  t.end_fill()
-  
-  t.pensize(9)
-  t.penup()
-  t.goto(-130,50)
-  t.pendown()
-  t.fillcolor('black')
-  t.pencolor('black')
-  t.goto(-129,50)
-  
-  t.pensize(2)
-  t.penup()
-  t.goto(-155,35)
-  t.pendown()
-  t.fillcolor('orange')
-  t.pencolor('orange')
-  t.begin_fill()
-  t.circle(10, 360, 3)
-  t.end_fill()
-
-#Fish 2
-def fish_two():
   t.penup()
   t.goto(140,-50)
   t.pendown()
@@ -131,7 +82,56 @@ def fish_two():
   t.fillcolor('forestgreen')
   t.pencolor('forestgreen')
   t.circle(50,40)
+
+#Fish 2
+def fish_two():
+  t.right(30)
+  t.penup()
+  t.goto(-160,50)
+  t.pendown()
+  t.fillcolor('red')
+  t.pencolor('red')
+  t.begin_fill()
+  t.circle(30, 360, 3)
+  t.end_fill()
   
+  t.penup()
+  t.goto(-110,50)
+  t.pendown()
+  t.pencolor('pink')
+  t.fillcolor('pink')
+  t.pensize(2)
+  t.begin_fill()
+  t.circle(50,360,3)
+  t.end_fill()
+       
+  t.penup()
+  t.goto(-110,50)
+  t.pendown()
+  t.fillcolor('red')
+  t.pencolor('red')
+  t.begin_fill()
+  t.circle(30, 360, 3)
+  t.end_fill()
+  
+  t.pensize(9)
+  t.penup()
+  t.goto(-130,50)
+  t.pendown()
+  t.fillcolor('black')
+  t.pencolor('black')
+  t.goto(-129,50)
+  
+  t.pensize(2)
+  t.penup()
+  t.goto(-155,35)
+  t.pendown()
+  t.fillcolor('orange')
+  t.pencolor('orange')
+  t.begin_fill()
+  t.circle(10, 360, 3)
+  t.end_fill()
+
 #Fish 3
 def fish_three():
   t.penup()
@@ -196,19 +196,79 @@ def fish_three():
   
   t.penup()
   t.goto(-15,135)
-  t.pendown()
   t.pensize(4)
+  t.pendown()
   t.fillcolor('navy')
   t.pencolor('navy')
   t.goto(-14,135)
   
-  
-
-fish_two()
 fish_one()
+fish_two()
 fish_three()
+
+def coral1():
+  t.pencolor("mediumvioletred")
+  t.fillcolor("mediumvioletred")
+  t.begin_fill()
+  t.circle(10,360,4)
+  t.end_fill()
+  
+def coral2():
+  t.pencolor("mediumvioletred")
+  t.fillcolor("mediumvioletred")
+  t.begin_fill()
+  t.forward(20)
+  t.right(90)
+  t.forward(15)
+  t.right(90)
+  t.forward(20)
+  t.right(90)
+  t.forward(15)
+  t.right(20)
+  t.end_fill()
+  
+def coral3():
+  t.pencolor("mediumvioletred")
+  t.fillcolor("mediumvioletred")
+  t.begin_fill()
+  t.forward(10)
+  t.right(90)
+  t.forward(5)
+  t.right(90)
+  t.forward(10)
+  t.right(90)
+  t.forward(5)
+  t.right(20)
+  t.end_fill()
+
 t.penup()
-t.goto(0,0)
-t.pendown()
+t.goto(-100,-130)
+t.left(200)
+for i in range(5):
+  t.pendown()
+  coral2()
+  t.penup()
+  t.right(80)
+  t.forward(20)
+t.penup()
+t.goto(-90,-120)
+t.left(90)
+for i in range(4):
+  t.pendown()
+  coral1()
+  t.penup()
+  t.right(10)
+  t.forward(12)
+
+t.penup()
+t.goto(-90,-120)
+t.right(90)
+for i in range(6):
+  t.pendown()
+  coral1()
+  t.penup()
+  t.left(10)
+  t.forward(12)
+   
 trtl.done()
 
