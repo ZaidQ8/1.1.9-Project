@@ -7,39 +7,6 @@ t.hideturtle()
 #create bg color and size
 screen.bgcolor("#3c96a8")
 screen.setup(600, 400)
-#move to where brain coral is
-t.pensize(15)
-t.pencolor("#fbad40")
-t.fillcolor("#fbad40")
-t.penup()
-t.goto(60,-180)
-t.pendown()
-#create brain coral shape
-t.begin_fill()
-t.circle(13)
-t.end_fill()
-#make octagon variables, set colors
-t.pencolor("#49330e")
-t.pensize(1)
-t.fillcolor("#49330e")
-#angle for angle and space for space inbetween octagons and size for variation of size
-angle=60
-space=1
-size=1
-t.penup()
-t.goto(61,-170)
-#make octagons
-while t.ycor()<=-150 and t.ycor()>=-185:
-  t.penup()
-  t.left(angle)
-  t.forward(space+3)
-  t.pendown()
-  t.begin_fill()
-  t.circle(size,360,8)
-  t.end_fill()
-  space+=1
-  angle+=0.5
-  size+=0.1
 #go to turtle place
 t.penup()
 t.goto(83,120)
@@ -133,8 +100,8 @@ t.fillcolor("#493f37")
 t.setheading(225)
 t.pendown()
 t.begin_fill()
-rotate=0
-move=0
+rotate=0 #determines trtl rotation value
+move=0 #determines trtl movement value
 for step in range(5):
   if(step<3):
     rotate=10*step
@@ -214,6 +181,7 @@ t.end_fill()
 
 
 screen.mainloop()
+
 
 
 
